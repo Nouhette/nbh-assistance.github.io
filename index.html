@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nouhette Ben Hamida · NBH Assistance et Gestion</title>
+<meta name="description" content="Office Manager indépendante à Lyon · Bras droit des TPE & indépendants. Je décharge, j'organise, vous avancez.">
+<meta name="theme-color" content="#B598B0">
+<meta property="og:title" content="Nouhette Ben Hamida · NBH Assistance et Gestion">
+<meta property="og:description" content="Office Manager indépendante · Bras droit des TPE & indépendants · Lyon">
+<meta property="og:image" content="portrait.png">
+<link rel="icon" href="portrait.png">
+<link rel="apple-touch-icon" href="portrait.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --mauve: #B598B0;
+    --mauve-fonce: #6E4A68;
+    --noir: #141414;
+    --blanc: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { background: var(--mauve); }
+  body {
+    background: var(--mauve);
+    color: var(--noir);
+    font-family: "Alegreya", Georgia, "Times New Roman", serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+  }
+  .carte {
+    width: 100%;
+    max-width: 440px;
+    padding: 32px 0 28px;
+    text-align: center;
+  }
+  .portrait {
+    width: 148px; height: 148px;
+    border-radius: 50%;
+    background: var(--blanc);
+    border: 4px solid var(--noir);
+    overflow: hidden;
+    margin: 0 auto 18px;
+  }
+  .portrait img { width: 100%; height: 100%; display: block; }
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    padding: 0 20px;
+  }
+  .marque {
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+  }
+  .marque span {
+    display: block;
+    font-family: "Caveat", cursive;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0;
+    color: var(--blanc);
+    margin-top: -4px;
+  }
+  .etiquettes {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 8px;
+    padding: 16px 20px 22px;
+  }
+  .etiquette {
+    background: var(--blanc);
+    color: var(--mauve-fonce);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .bandeau {
+    background: var(--noir);
+    color: var(--blanc);
+    font-size: 21px;
+    font-weight: 500;
+    font-style: italic;
+    padding: 14px 20px;
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+  .actions {
+    display: grid;
+    gap: 12px;
+    padding: 24px 20px 8px;
+  }
+  .bouton {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    min-height: 56px;
+    border-radius: 999px;
+    background: var(--blanc);
+    color: var(--mauve-fonce);
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 0 20px;
+    transition: transform .1s ease;
+  }
+  .bouton:active { transform: scale(.98); }
+  .bouton svg { width: 22px; height: 22px; flex: none; }
+  .bouton .texte { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.15; text-align: left; min-width: 0; }
+  .bouton small { font-weight: 500; font-size: 15px; opacity: .9; overflow-wrap: anywhere; }
+  .bouton.detail { padding: 10px 22px; justify-content: flex-start; }
+  .bouton.principal { background: var(--noir); color: var(--blanc); }
+  .bouton:focus-visible { outline: 3px solid var(--noir); outline-offset: 3px; }
+  .bouton.principal:focus-visible { outline-color: var(--blanc); }
+  .infos {
+    margin-top: 18px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .infos a { color: var(--noir); }
+  .signature {
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    color: var(--blanc);
+    margin-top: 14px;
+  }
+</style>
+</head>
+<body>
+<main class="carte">
+  <div class="portrait"><img src="portrait.png" alt="Portrait illustré de Nouhette Ben Hamida" width="148" height="148"></div>
+
+  <h1>Nouhette<br>Ben Hamida</h1>
+  <p class="marque">NBH <span>assistance et gestion</span></p>
+
+  <div class="etiquettes">
+    <span class="etiquette">Office Manager indépendante</span>
+    <span class="etiquette">Bras droit des TPE &amp; indépendants</span>
+    <span class="etiquette">Lyon · sur site ou à distance</span>
+  </div>
+
+  <p class="bandeau">«&nbsp;Je décharge, j'organise, vous&nbsp;avancez.&nbsp;»</p>
+
+  <nav class="actions" aria-label="Me contacter">
+    <a class="bouton principal" href="nouhette-ben-hamida.vcf" download="Nouhette-Ben-Hamida.vcf">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+      Enregistrer mon contact
+    </a>
+    <a class="bouton detail" href="tel:+33695495405">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span class="texte">M'appeler <small>06 95 49 54 05</small></span>
+    </a>
+    <a class="bouton detail" href="mailto:contact@nbh-assistance.fr">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+      <span class="texte">M'écrire <small>contact@nbh-assistance.fr</small></span>
+    </a>
+    <a class="bouton detail" href="https://contact575213.wixsite.com/nbh-assistance" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span class="texte">Voir mon site <small>contact575213.wixsite.com/nbh-assistance</small></span>
+    </a>
+  </nav>
+
+  <div class="infos">
+    <p class="signature">À très vite !</p>
+  </div>
+</main>
+</body>
+</html>
